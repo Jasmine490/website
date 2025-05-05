@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawfect Pets</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="fs-2 fw-bold">PAWFECT PETS</div>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="cart.html" class="text-white text-decoration-none">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="authForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                            <a href="#" class="text-primary text-decoration-none" onclick="toggleSignup()">Create Account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="container text-center my-4">
+        <img src="image/image.png" alt="Pawfect Pets Banner" class="img-fluid max-width-100">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container justify-content-center">
+            <div class="navbar-nav">
+                <a class="nav-link" href="index.html">HOME</a>
+                <a class="nav-link active fw-bold" href="products.html">PRODUCTS</a>
+                <a class="nav-link" href="blog.html">BLOG</a>
+                <a class="nav-link" href="about.html">ABOUT US</a>
+                <a class="nav-link" href="collection.html">COLLECTION</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+
+        <h1 class="display-6 fw-bold mb-4">Products</h1>
+
+        <div class="d-flex justify-content-end align-items-center mb-3">
+            <label class="me-2">Sort by</label>
+            <select class="form-select w-auto">
+                <option>ALPHABETICALLY, A-Z</option>
+                <option>ALPHABETICALLY, Z-A</option>
+                <option>PRICE, LOW TO HIGH</option>
+                <option>PRICE, HIGH TO LOW</option>
+            </select>
+        </div>
+
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+            <div class="col">
+                <a href="cart2.html" class="text-decoration-none text-dark">
+                    <div class="product-container">
+                        <img src="image/bowl1.jpg" alt="4\" Raised Dog Bowls" class="img-fluid">
+                        <p class="fw-bold mt-2">4" Raised Dog Bowls</p>
+                        <p class="text-muted">$39.95</p>
+                    </div>
+                </a>
+            </div>
+            
+
+    <div class="product-container">
+        <img src="image/bowl2.jpg" alt="Product 2">
+        <p style="font-weight: bold;">Adjustable Pet Dog Feeder</p>
+        <p style="color: #888;">$90.95</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl3.jpg" alt="Product 3">
+        <p style="font-weight: bold;">Elevated Dog Bowl Stand</p>
+        <p style="color: #888;">$47.95</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl4.jpg" alt="Product 4">
+        <p style="font-weight: bold;">Pawfect Pets Raised Feeder</p>
+        <p style="color: #888;">From $35.99</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl5.jpg" alt="Product 5">
+        <p style="font-weight: bold;">Premium 12" Elevated Feeder</p>
+        <p style="color: #888;">$49.95</p>
+    </div>
+
+    <div class="product-container sold-out">
+        <img src="image/bowl5.jpg" alt="Sold Out">
+        <p style="font-weight: bold;">Replacement Bowls - Medium</p>
+        <p style="color: #888;">$14.99</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl8.jpg" alt="Product 6">
+        <p style="font-weight: bold;">Replacement Bowls - Small</p>
+        <p style="color: #888;">$14.99</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl7.jpg" alt="Product 7">
+        <p style="font-weight: bold;">Replacement Bowls (Set of 4)</p>
+        <p style="color: #888;">$14.99</p>
+    </div>
+
+    <div class="product-container">
+        <img src="image/bowl10.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Replacement Mats for Carrier</p>
+        <p style="color: #888;">$13.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/catbed.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Catbed</p>
+        <p style="color: #888;">$17.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/1.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Dog toy</p>
+        <p style="color: #888;">$14.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/11.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Moochie</p>
+        <p style="color: #888;">$10.01</p>
+    </div>
+    <div class="product-container">
+        <img src="image/15.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Moochie</p>
+        <p style="color: #888;">$10.50</p>
+    </div>
+    <div class="product-container">
+        <img src="image/12.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Jerky Time Chicken Chunk</p>
+        <p style="color: #888;">$12.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/13.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Jerky Time Beef Chunk</p>
+        <p style="color: #888;">$10.60</p>
+    </div>
+    <div class="product-container">
+        <img src="image/14.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Jerky Time Lamb Chunk</p>
+        <p style="color: #888;">$16.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/catfood.png" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Cat Food</p>
+        <p style="color: #888;">$18.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/dog1.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Dog Food</p>
+        <p style="color: #888;">$19.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/playball.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Play Fall</p>
+        <p style="color: #888;">$12.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/16.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Male Wraps</p>
+        <p style="color: #888;">$14.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/17.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Pet Wipes</p>
+        <p style="color: #888;">$19.00</p>
+    </div>
+    <div class="product-container">
+        <img src="image/18.jpg" alt="Sold Out Mat">
+        <p style="font-weight: bold;">Training Pads</p>
+        <p style="color: #888;">$11.04</p>
+    </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-3 fs-4 text-decoration-none">📘</a>
+                        <a href="#" class="text-white fs-4 text-decoration-none">📸</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p>Email: <a href="mailto:Pets@PawfectPets.com" class="text-white text-decoration-none">Pets@PawfectPets.com</a></p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p>Copyright © 2025, Pawfect Pets.</p>
+                <div>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">💰</span>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">🅿️</span>
+                    <span>💳</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        function toggleSignup() {
+            const modalTitle = document.getElementById('modalTitle');
+            const authForm = document.getElementById('authForm');
+            
+            modalTitle.textContent = "Sign Up";
+            authForm.innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Full Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                    <a href="#" class="text-primary text-decoration-none" onclick="toggleLogin()">Already have an account?</a>
+                </div>
+            `;
+        }
+
+        function toggleLogin() {
+            const modalTitle = document.getElementById('modalTitle');
+            const authForm = document.getElementById('authForm');
+            
+            modalTitle.textContent = "Login";
+            authForm.innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="#" class="text-primary text-decoration-none" onclick="toggleSignup()">Create Account</a>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

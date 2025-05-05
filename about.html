@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pawfect Pets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-3">
+                <div class="fs-2 fw-bold">PAWFECT PETS</div>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="cart.html" class="text-white text-decoration-none">
+                        <i class="fas fa-shopping-cart"></i> Cart
+                    </a>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="authForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                        <div class="text-center mt-3">
+                            <p class="text-muted">
+                                Don't have an account? 
+                                <button type="button" class="btn btn-link p-0" onclick="toggleSignup()">Sign Up</button>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center my-4">
+        <img src="image/image.png" alt="Pawfect Pets Banner" class="img-fluid max-width-100">
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container justify-content-center">
+            <div class="navbar-nav gap-4">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="products.html" class="nav-link">PRODUCTS</a>
+                <a href="blog.html" class="nav-link">BLOG</a>
+                <a href="about.html" class="nav-link fw-bold">ABOUT US</a>
+                <a href="collection.html" class="nav-link">COLLECTION</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="display-5 mb-4">About Us</h2>
+
+        <p class="lead">
+            There is an overwhelming number of pet products on the market nowadays – you can find anything your cat or dog could possibly need online or in big-box stores. It's great to have options, but sometimes it's hard to know where to start when you're trying to keep your pet as healthy and happy as possible.
+        </p>
+
+        <p class="lead">
+            That's where we come in. <strong>Pawfect Pets</strong> was founded by animal lovers who want the absolute best for their pets. We were looking for high-quality products that served our pets and looked good doing it. We wanted a place with a curated selection of products that we could trust. When we couldn't find it, we created our own!
+        </p>
+
+        <p class="lead fw-bold">
+            Each Pawfect Pets product is carefully researched, developed, and tested in-house before we offer it on our site. We wouldn't sell anything that isn't enthusiastically approved by our families, and more importantly, by our pets. We hope you're just as happy with our products as we are. And if you're not? We'll do everything we can to make it right.
+        </p>
+
+        <div class="mt-4">
+            <img src="image/about.png" alt="Pawfect Pets" class="img-fluid rounded shadow">
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Products</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">About us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white me-3 fs-4 text-decoration-none">📘</a>
+                        <a href="#" class="text-white fs-4 text-decoration-none">📸</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p>Email: <a href="mailto:Pets@PawfectPets.com" class="text-white text-decoration-none">Pets@PawfectPets.com</a></p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <p class="mb-3">Copyright © 2025, Pawfect Pets.</p>
+                <div>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">💰</span>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">🅿️</span>
+                    <span>💳</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function toggleSignup() {
+            document.getElementById('modalTitle').innerText = 'Sign Up';
+            document.getElementById('authForm').innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                <div class="text-center mt-3">
+                    <p class="text-muted">
+                        Already have an account? 
+                        <button type="button" class="btn btn-link p-0" onclick="toggleLogin()">Login</button>
+                    </p>
+                </div>
+            `;
+        }
+
+        function toggleLogin() {
+            document.getElementById('modalTitle').innerText = 'Login';
+            document.getElementById('authForm').innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+                <div class="text-center mt-3">
+                    <p class="text-muted">
+                        Don't have an account? 
+                        <button type="button" class="btn btn-link p-0" onclick="toggleSignup()">Sign Up</button>
+                    </p>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>

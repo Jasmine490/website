@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawfect Pets</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="bg-dark text-white">
+        <div class="container d-flex justify-content-between align-items-center py-3">
+            <div class="fs-2 fw-bold">PAWFECT PETS</div>
+            <div class="d-flex align-items-center gap-3">
+                <a href="cart.html" class="text-white text-decoration-none">
+                    <i class="fas fa-shopping-cart"></i> Cart
+                </a>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+    
+
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="authForm">
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Password</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                        <p class="text-center mt-3">
+                            Don't have an account? 
+                            <button type="button" class="btn btn-link" onclick="toggleSignup()">Sign Up</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container text-center my-4">
+        <img src="image/image.png" alt="Pawfect Pets Banner" class="img-fluid max-width-100">
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container justify-content-center">
+            <div class="navbar-nav gap-4">
+                <a href="index.html" class="nav-link active fw-bold">HOME</a>
+                <a href="products.html" class="nav-link text-secondary">PRODUCTS</a>
+                <a href="blog.html" class="nav-link text-secondary">BLOG</a>
+                <a href="about.html" class="nav-link text-secondary">ABOUT US</a>
+                <a href="collection.html" class="nav-link text-secondary">COLLECTION</a>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container d-flex justify-content-center my-5">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="image/dog-ear-problem.jpg" alt="Cute Dog" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/feeding-kitten.jpg" alt="Adorable Kitten" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="image/56.png" alt="Happy Pets" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="row border-bottom pb-2 mb-4">
+            <div class="col">
+                <h3 class="text-lg">Elevated Pet Feeders</h3>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="text-center product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/9x1yLtT8NYvBHlCX-OPheSkFEvyB1gQ8z6F62FKCQ_Y.jpg" 
+                         alt="4in elevated pet feeder" 
+                         class="img-fluid mb-3" 
+                         style="max-width: 100px; margin: 0 auto;">
+                    <h4 class="fw-bold mb-2">4" Elevated Pet Feeder</h4>
+                    <p class="text-muted mb-2">
+                        This raised pet feeder is the perfect height for cats and small dogs. Available in four colors (Bamboo | Black | White | Acacia).
+                    </p>
+                    <a href="products.html" class="text-pink">SHOP NOW!</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="text-center product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/ddGO7IKLvp7fkdFBZ9yciGCgKUXgVp7TD7GqnnQXnms.jpg" 
+                         alt="7in elevated pet feeder" 
+                         class="img-fluid mb-3" 
+                         style="max-width: 100px; margin: 0 auto;">
+                    <h4 class="fw-bold mb-2">7" Elevated Pet Feeder</h4>
+                    <p class="text-muted mb-2">
+                        This raised pet feeder is the perfect height for medium sized dogs. Available in four colors (Bamboo | Black | White | Acacia).
+                    </p>
+                    <a href="products.html" class="text-pink">SHOP NOW!</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="text-center product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/BuG1m28hHi3b6u_8dPzxNtaVz3Wanlz_F-dmAttN6R0.jpg" 
+                         alt="12in elevated pet feeder" 
+                         class="img-fluid mb-3" 
+                         style="max-width: 100px; margin: 0 auto;">
+                    <h4 class="fw-bold mb-2">12" Elevated Pet Feeder</h4>
+                    <p class="text-muted mb-2">
+                        This raised pet feeder is the perfect height for large dogs.
+                    </p>
+                    <a href="products.html" class="text-pink">SHOP NOW!</a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="text-center product-card">
+                    <img src="https://storage.googleapis.com/a1aa/image/h-D1sCx7kL3kwHklziCm168Z9Cc3KJP8A9Xs4rnxQ7w.jpg" 
+                         alt="adjustable height pet feeder" 
+                         class="img-fluid mb-3" 
+                         style="max-width: 100px; margin: 0 auto;">
+                    <h4 class="fw-bold mb-2">Adjustable Height Pet Feeder</h4>
+                    <p class="text-muted mb-2">
+                        Our adjustable height elevated pet feeder can be customized to fit your large dog's height. The feeder eating platform can be easily changed between 12" tall, 14" tall, and 16" tall.
+                    </p>
+                    <a href="products.html" class="text-pink">SHOP NOW!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <div class="d-flex flex-column">
+                        <a href="#" class="text-white text-decoration-none">Products</a>
+                        <a href="#" class="text-white text-decoration-none">Blog</a>
+                        <a href="#" class="text-white text-decoration-none">About us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <div>
+                        <a href="#" class="text-white text-decoration-none me-3">📘</a>
+                        <a href="#" class="text-white text-decoration-none">📸</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p>Email: <a href="mailto:Pets@PawfectPets.com" class="text-white text-decoration-none">Pets@PawfectPets.com</a></p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>Copyright © 2025, Pawfect Pets.</p>
+                <div>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">💰</span>
+                    <span class="me-2">💳</span>
+                    <span class="me-2">🅿️</span>
+                    <span>💳</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Swiper Initialization
+        var swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
+
+        // Login/Signup Modal Toggle Functions
+        function toggleSignup() {
+            const modalTitle = document.getElementById('modalTitle');
+            const authForm = document.getElementById('authForm');
+            modalTitle.innerText = 'Sign Up';
+            authForm.innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Sign Up</button>
+                <p class="text-center mt-3">
+                    Already have an account? 
+                    <button class="btn btn-link" onclick="toggleLogin()">Login</button>
+                </p>
+            `;
+        }
+
+        function toggleLogin() {
+            const modalTitle = document.getElementById('modalTitle');
+            const authForm = document.getElementById('authForm');
+            modalTitle.innerText = 'Login';
+            authForm.innerHTML = `
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+                <p class="text-center mt-3">
+                    Don't have an account? 
+                    <button class="btn btn-link" onclick="toggleSignup()">Sign Up</button>
+                </p>
+            `;
+        }
+    </script>
+</body>
+</html>
